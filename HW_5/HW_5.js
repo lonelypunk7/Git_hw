@@ -3,14 +3,13 @@ const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let i = 0; i < values.length; i++) {
   if (values[i] % 2 === 0) {
     console.log(
-    Элемент ${values[i]} - четный, вот его квадрат - ${values[i] ** 2}
+    `Элемент ${values[i]} - четный, вот его квадрат - ${values[i] ** 2}`
     );
   } else {
     console.log(
-      Элемент ${values[i]} - нечетный, вот его куб - ${values[i] ** 3}
+      `Элемент ${values[i]} - нечетный, вот его куб - ${values[i] ** 3}`
     );
   }
-
 
 
   const a = [1, 2, 3, 4, 5];
@@ -45,15 +44,14 @@ for (let i = 0; i < values.length; i++) {
   }
   
   for (const pizza of myPizzas) {
-    pizza.toUpperCase();
     if (!competitorPizzas.includes(pizza)) {
       result.push(pizza);
       all = false;
     }
   }
   
-  if (result.length === 0) {
+if (result.length === 0) {
     console.log(null);
-  } else {
+} else {
     console.log(result);
-  }
+}
